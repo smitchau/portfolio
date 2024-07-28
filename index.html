@@ -20,6 +20,42 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<style>
+		.button-container {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: flex;
+			justify-content: space-between;
+		}
+		.button-container a {
+			flex: 1;
+			margin: 0;
+			padding: 10px 0;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			border-radius: 0;
+			border-top: 1px solid rgba(255, 255, 255, 0.5);
+		}
+		.btn-primary {
+			background-color: #007bff;
+		}
+		.btn-secondary {
+			background-color: #6c757d;
+		}
+		.h_gallery_item {
+			position: relative;
+			overflow: hidden;
+		}
+		.g_img_item img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	</style>
 </head>
 
 <body>
@@ -354,75 +390,82 @@
 		</div>
 	</section> -->
 	<!--================End Feature Area ================= -->
-
-	<!--================Home Gallery Area =================-->
-	<section class="home_gallery_area p_120">
-		<div class="container">
-			<div class="main_title">
-				<h2>Our Latest Projects</h2>
-				
-			</div>
-			<!-- <div class="isotope_fillter">
-				<ul class="gallery_filter list">
-					<li class="active" data-filter="*"><a href="#">All</a></li>
-					<li data-filter=".brand"><a href="#">Vector</a></li>
-					<li data-filter=".manipul"><a href="#">Raster</a></li>
-					<li data-filter=".creative"><a href="#">UI/UX</a></li>
-					<li data-filter=".design"><a href="#">Printing</a></li>
-				</ul>
-			</div> -->
-		</div>
-		<div class="container">
-			<div class="gallery_f_inner row imageGallery1">
-				<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-					<div class="h_gallery_item">
-						<a href="https://healthify22024.pythonanywhere.com/">
-						<div class="g_img_item">
-							<img class="img-fluid" src="img/login.jpg" alt="" style="height: 335px;">
-						</div>
-						</a>
-						<div class="g_item_text">
-							<a href="https://github.com/smitchau/healthify"><h4>Healthify</h4></a>
-							
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-					<div class="h_gallery_item">
-						<a href="">
-						<div class="g_img_item">
-							<img class="img-fluid" src="img/16615055161631528803home-shift.webp" alt="" style="height: 335px;">
-						</div>
-						</a>
-						<div class="g_item_text">
-							<a href="https://github.com/smitchau/home-shifting"><h4>Home Shifting</h4></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-					<div class="h_gallery_item">
-						<a href="">
-						<div class="g_img_item">
-							<img class="img-fluid" src="img/Shopping.jpg" alt="" style="height: 335px;">
-						</div>
-						</a>
-						<div class="g_item_text">
-							<a href="https://github.com/smitchau/E-commerce/tree/main/myenv1"><h4>Coza Store</h4></a>
-						</div>
-					</div>
-				</div>
-				
-				
-				
-				
-			</div>
+        
+        <!--================Home Gallery Area =================-->
+        <section class="home_gallery_area p_120">
+            <div class="container">
+                <div class="main_title">
+                    <h2>Our Latest Projects</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="gallery_f_inner row imageGallery1">
+                    <div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <img class="img-fluid" src="img/login.jpg" alt="" style="height: 335px;">
+                                <div class="button-container">
+                                    <a class="btn btn-primary" href="https://healthify22024.pythonanywhere.com/">Live Project</a>
+                                    <a class="btn btn-secondary"  href="https://github.com/smitchau/healthify">Code</a>
+                                </div>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Healthify</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <img class="img-fluid" src="img/16615055161631528803home-shift.webp" alt="" style="height: 335px;">
+                                <div class="button-container">
+                                    <!-- <a class="btn btn-primary" href="#">Live Project</a> -->
+                                    <a class="btn btn-secondary" href="https://github.com/smitchau/home-shifting">Code</a>
+                                </div>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Home Shifting</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <img class="img-fluid" src="img/Shopping.jpg" alt="" style="height: 335px;">
+                                <div class="button-container">
+                                    <!-- <a class="btn btn-primary" href="#">Live Project</a> -->
+                                    <a class="btn btn-secondary" href="https://github.com/smitchau/E-commerce/tree/main/myenv1">Code</a>
+                                </div>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Coza Store</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<br>
+                <div class="gallery_f_inner row imageGallery1">
+                    <div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
+                        <div class="h_gallery_item">
+                            <div class="g_img_item">
+                                <img class="img-fluid" src="img/wp4782956.jpg" alt="" style="height: 335px;">
+                                <div class="button-container">
+                                    <a class="btn btn-primary" href="https://tourism123.pythonanywhere.com/">Live Project</a>
+                                    <a class="btn btn-secondary"  href="https://github.com/smitchau/Tourism.git">Code</a>
+                                </div>
+                            </div>
+                            <div class="g_item_text">
+                                <h4>Tourism</h4>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
 			
-		</div>
-	</section>
-	<!--================End Home Gallery Area =================-->
-
+        </section>
+        <!--================End Home Gallery Area =================-->
+        
 	<!--================Testimonials Area =================-->
 	<!-- <section class="testimonials_area p_120">
 		<div class="container">
